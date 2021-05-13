@@ -38,10 +38,10 @@ function AnimationSpeedRangeSlider({
       <AnimationSpeedSlider
         id="animationSpeedSlider"
         min={10}
-        max={200}
+        max={500}
         defaultValue={animationSpeed}
         valueLabelDisplay="auto"
-        onChangeCommitted={onChangeAnimationSpeedRangeSlider}
+        onChange={onChangeAnimationSpeedRangeSlider}
       />
     </div>
   );

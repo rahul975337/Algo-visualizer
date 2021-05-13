@@ -34,15 +34,14 @@ function ArrayBarRangeSlider({
   return (
     <div className="range-slider-container">
       <p id="text-array-size">Array Size</p>
+
       <ArrayBarSlider
         id="arrayBarSlider"
         min={2}
         max={14}
-        step={1}
         defaultValue={numberOfArrayBars}
         valueLabelDisplay="auto"
-        marks
-        onChangeCommitted={onChangeArrayBarRangeSlider}
+        onChange={onChangeArrayBarRangeSlider}
       />
     </div>
   );

@@ -17,7 +17,7 @@
   animation: animate 3s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: rgba(150, 16, 16, 0);
 }
 
 @media only screen and (max-width: 510px) {
