@@ -19,6 +19,7 @@ function SortingVisualizer() {
 
   useEffect(() => {
     generateNewArray();
+    // eslint-disable-next-line
   }, []);
 
   const generateNewArray = () => {
