@@ -13,13 +13,13 @@
   height: 100%;
   position: absolute;
   overflow: hidden;
-  /* background-color: #264653 */
-  background-image: linear-gradient(
+  background-color: #0d0d0d;
+  /* background-image: linear-gradient(
     to bottom right,
     #265077,
     #022140,
     #494b68,
     #1e4258,
     #2d575d
-  );
+  ); */
 }
