@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
-// .. ALGORITHMS .. //
-import BubbleSort from "./../Algorithms/BubbleSort/BubbleSort";
-import InsertionSort from "./../Algorithms/InsertionSort/InsertionSort";
-import SelectionSort from "./../Algorithms/SelectionSort/SelectionSort";
-import ArrayBar from "./../Components/ArrayBar/ArrayBar";
-import ButtonsBar from "./../Components/ButtonsBar/ButtonsBar";
-// .. COMPONENTS .. //
-import Header from "./../Components/Header/Header";
-import RangeSlider from "./../Components/RangeSliders/RangeSlider";
-// .. HELPER FUNCTIONS .. //
-import { playAudio, randomIntFromInterval } from "./../HelperFunctions.js";
-// .. SOUNDS .. //
-import ResetEffect from "./../sounds/ResetEffect.mp3";
-// ...Style
 import "./SortingVisualizer.css";
-// --------------------------------------------
+
+import { playAudio, randomIntFromInterval } from "./../HelperFunctions.js";
+import { useEffect, useState } from "react";
+
+import ArrayBar from "./../Components/ArrayBar/ArrayBar";
+import BubbleSort from "./../Algorithms/BubbleSort/BubbleSort";
+import ButtonsBar from "./../Components/ButtonsBar/ButtonsBar";
+import Header from "./../Components/Header/Header";
+import InsertionSort from "./../Algorithms/InsertionSort/InsertionSort";
+import RangeSlider from "./../Components/RangeSliders/RangeSlider";
+import ResetEffect from "./../sounds/ResetEffect.mp3";
+import SelectionSort from "./../Algorithms/SelectionSort/SelectionSort";
+
 function SortingVisualizer() {
   const [array, setArray] = useState([]);
   const [animationSpeed, setAnimationSpeed] = useState(50);
@@ -70,22 +67,14 @@ function SortingVisualizer() {
 
   return (
     <div className="main-container">
-      {/* --------------------- HEADER : 8% Height --------------------- */}
       <Header />
-
-      {/* --------------------- BUTTONS : 10% Height --------------------- */}
-
       <ButtonsBar
         generateNewArray={generateNewArray}
         bubbleSort={bubbleSort}
         selectionSort={selectionSort}
         insertionSort={insertionSort}
       />
-
-      {/* --------------------- BARS : 74% Height --------------------- */}
       <ArrayBar array={array} />
-
-      {/* --------------------- SLIDERS : 8% Height --------------------- */}
       <RangeSlider
         numberOfArrayBars={numberOfArrayBars}
         animationSpeed={animationSpeed}

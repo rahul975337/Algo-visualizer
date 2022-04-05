@@ -7,6 +7,7 @@ import {
   resetBarStyleDefault,
   swapBars,
 } from "../../HelperFunctions.js";
+
 import getBubbleSortAnimations from "./getBubbleSortAnimations";
 
 const BubbleSort = (array, animationSpeed) => {
@@ -23,7 +24,7 @@ const BubbleSort = (array, animationSpeed) => {
     const isFinalElement = animations[i + 3];
     const finalElement = animations[i + 4];
 
-    // Here, promise has been used to know when to Enable Buttons again after the setTimeout ends.
+   
     const promise1 = new Promise(function (resolve, reject) {
       setTimeout(() => {
         // Changing the color-bar of comparing elements.
